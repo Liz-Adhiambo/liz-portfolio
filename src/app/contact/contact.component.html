@@ -12,7 +12,7 @@
         <img class="image-fluid mb-3" src="assets/contact.jpg">
     </div>
     <div class="col bg-light">
-        <form action="https://formsubmit.co/c91d813c251f84e01dbfdee20b5ccc66" method="POST">
+        <form action="https://formsubmit.co/c91d813c251f84e01dbfdee20b5ccc66" method="POST" id="myForm">
             <!-- Name Input-->
             <div class="form-outline mb-4 hey">
               <label class="form-label " for="form4Example1">Name</label>
@@ -46,7 +46,7 @@
               </label>
             </div> -->
             <!-- Submit button -->
-           <button type="submit" class="btn btn-warning mb-4">Let's Talk  <i class="fa-solid fa-angles-right" style="color: white;"></i></button>
+           <button type="submit" class="btn btn-warning mb-4" onclick="myFunction()" >Let's Talk  <i class="fa-solid fa-angles-right" style="color: white;"></i></button>
         </form>
 
  
@@ -54,4 +54,11 @@
 
   </div>
 </div>
+<script>
+  function myFunction() {
+    document.getElementById("myForm").reset();
+  }
+  </script>
+
+
   <br>
